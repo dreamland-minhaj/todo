@@ -30,7 +30,7 @@ const Todo = ()=>{
                 <ul className="mt-2">
                     {todo.map((item)=>{
                         return(
-                            <li key="item" className="flex justify-between bg-blue-700 p-2 text-white rounded-lg mb-1 max-w-96">{item}<button onClick={()=>handleExitBtn(item)}>X</button></li>
+                            <li key="item" className="flex justify-between bg-blue-700 p-2 text-white rounded-lg mb-1 max-w-96">{item}<button className="bg-red-600 p-2 px-2 rounded-md" onClick={()=>handleExitBtn(item)}>X</button></li>
                         );
                     })}
                 </ul>
